@@ -25,3 +25,14 @@ sudo minikube-linux-amd64 start --vm-driver=none
 ************************************************************************************
 
 
+
+
+sudo kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 --port=8080
+sudo kubectl expose deployment hello-minikube --type=NodePort
+sudo kubectl get all
+sudo kubectl delete deploy svc/hello-minikube
+sudo kubectl get all
+sudo kubectl delete svc/hello-minikube
+sudo kubectl expose deployment hello-minikube --type=NodePort
+sudo minikube-linux-amd64 service he
+
