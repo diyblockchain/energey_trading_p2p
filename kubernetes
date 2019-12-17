@@ -52,4 +52,12 @@ sudo apt-get install python-pip
   100  ls -ahl ~/.aws/
   101  history
 
+mkdir ssh
+  108  ssh-keygen -f /ssh/id_rsa
+  109  clear
+  110  ssh-keygen -f /home/vishal/ssh/id_rsa
+  111  cat /home/vishal/ssh/id_rsa.pub
+  112  sudo mv /usr/local/bin/kops-linux-amd64 /usr/local/bin/kops
+  113  clear
+  114  history
 
