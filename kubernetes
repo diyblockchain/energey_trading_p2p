@@ -1,0 +1,27 @@
+********************************************************************************************
+Dowload minikube 
+
+wget https://github.com/kubernetes/minikube/releases/download/v1.6.1/minikube-linux-amd64
+
+chmod +x minikube-linux-amd64
+
+sudo mv minikube-linux-amd64 /usr/local/bin
+
+Install Docker
+=================
+
+go to get.docker.com
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+
+sudo sh get-docker.sh
+
+========================
+
+Start Minikube
+
+sudo minikube-linux-amd64 start --vm-driver=none
+
+************************************************************************************
+
+
