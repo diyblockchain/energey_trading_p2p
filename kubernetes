@@ -61,3 +61,5 @@ mkdir ssh
   113  clear
   114  history
 
+ssh-keygen -f ~/.ssh/id_rsa
+kops create cluster --name=kube.koyn.exchange --state=s3://kkops-bukcet-abcd14351234 --zones=us-east-1 --node-count=2 --node-size=t2.micro --master-size=t2.micro --dns-zone=kube.koyn.exchange                                                
