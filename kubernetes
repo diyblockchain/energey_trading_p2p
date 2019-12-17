@@ -36,3 +36,20 @@ sudo kubectl delete svc/hello-minikube
 sudo kubectl expose deployment hello-minikube --type=NodePort
 sudo minikube-linux-amd64 service he
 
+For installing kops 
+=================
+
+sudo apt-get install python-pip
+
+92  wget https://github.com/kubernetes/kops/releases/download/1.15.0/kops-linux-amd64
+   93  sudo chmod +x kops-linux-amd64 
+   94  sudo mv kops-linux-amd64 /usr/local/bin/
+   95  clear
+   96  sudo apt-get install python-pip
+   97  sudo pip install awscli
+   98  clear
+   99  aws configure
+  100  ls -ahl ~/.aws/
+  101  history
+
+
