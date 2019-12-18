@@ -63,3 +63,34 @@ mkdir ssh
 
 ssh-keygen -f ~/.ssh/id_rsa
 kops create cluster --name=kube.koyn.exchange --state=s3://kkops-bukcet-abcd14351234 --zones=us-east-1 --node-count=2 --node-size=t2.micro --master-size=t2.micro --dns-zone=kube.koyn.exchange                                                
+
+
+=========================
+Commands to setup minikube on a EC2 instance
+===========================
+ clear
+    2  wget https://github.com/kubernetes/minikube/releases/download/v1.6.1/minikube-linux-amd64
+    3  chmod +x minikube-linux-amd64
+    4  sudo mv minikube-linux-amd64 /usr/local/bin/
+    5  clear
+    6  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+    7  chmod +x ./kubectl
+    8  sudo mv ./kubectl /usr/local/bin/kubectl
+    9  kubectl version
+   10  minikube-linux-amd64
+   11  sudo minikube start --vm-driver=none
+   12  sudo minikube-linux-amd64 start --vm-driver=none
+   13  curl -fsSL https://get.docker.com -o get-docker.sh
+   14  sudo sh get-docker.sh
+   15  sudo minikube-linux-amd64 start --vm-driver=none
+   16  kubectl get pods
+   17  sudo kubectl get pods
+   18  sudo kubectl get service
+   19  sudo minikube-linux-amd64 dashboard
+   20  sudo kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 --port=8080
+   21  sudo kubectl expose deployment hello-minikube --type=NodePort
+   22  sudo kubectl get all
+   23  sudo kubectl get pods
+   24  clear
+   25  history
+
