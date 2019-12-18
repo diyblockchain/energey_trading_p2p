@@ -128,3 +128,27 @@ docker login
    79  history
 
 
+PORt Forwarding
+
+
+
+sudo kubectl create -f helloworld.yml
+  121  sudo kubectl describe pod nodehelloworld.example.com
+  122  kubectl get pod
+  123  sudo kubectl get pod
+  124  clear
+  125  sudo kubectl port-forward nodehelloworld.example.com 8081:3000
+  126  kubectl get pods
+  127  sudo kubectl get pods
+  128  sudo kubectl delete pod hello-minikube-5688c64fd7-k8rmv
+  129  sudo kubectl port-forward nodehelloworld.example.com 8081:3000
+  130  sudo kubectl port-forward nodehelloworld.example.com 8080:3000
+  131  clear
+  132  which socat
+  133  sudo apt-get update && sudo apt-get install socat
+  134  which socat
+  135  clear
+  136  sudo kubectl port-forward nodehelloworld.example.com 8081:3000
+  137  clear
+
+
