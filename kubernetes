@@ -118,3 +118,13 @@ Commands to setup minikube on a EC2 instance
    64  sudo docker run -p 3000:3000 -it f23270244a58
 
 
+Docker Push Image to hub
+
+docker login
+   75  docker tag f23270244a58 diyblockchain/k8-demo
+   76  docker images
+   77  docker push diyblockchain/k8-demo
+   78  clear
+   79  history
+
+
