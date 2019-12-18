@@ -191,3 +191,48 @@ sudo kubectl create -f helloworld.yml
   174  sudo kubectl get pods
   175  history
 
+
+AWS ELB
+====================
+
+
+199  sudo kops create cluster --name=kube.koyn.exchange --state=s3://kkops-bukcet-abcd14351234 --zones=us-east-1 --node-count=2 --node-size=t2.micro --master-size=t2.micro --dns-zone=kube.koyn.exchange                                                
+  200  sudo kops create cluster --name=kube.koyn.exchange --state=s3://kkops-bukcet-abcd14351234 --zones=us-east-1a --node-count=2 --node-size=t2.micro --master-size=t2.micro --dns-zone=kube.koyn.exchange                                                
+  201  sudo kops update cluster --name kube.koyn.exchange --state=s3://kkops-bukcet-abcd14351234 --yes
+  202  sudo kops validate cluster --state=s3://kkops-bukcet-abcd14351234
+  203  clear
+  204  sudo kubectl create -f first-app/helloworld-service.yml 
+  205  sudo kops validate cluster --state=s3://kkops-bukcet-abcd14351234
+  206  sudo kubectl create -f first-app/helloworld-service.yml 
+  207  sudo kops validate cluster --state=s3://kkops-bukcet-abcd14351234
+  208  sudo kubectl create -f first-app/helloworld-service.yml 
+  209  sudo kops validate cluster --state=s3://kkops-bukcet-abcd14351234
+  210  sudo kubectl create -f first-app/helloworld.yml 
+  211  sudo kops validate cluster --state=s3://kkops-bukcet-abcd14351234
+  212  clear
+  213  sudo kubectl create -f first-app/helloworld.yml 
+  214  sudo kubectl get pods
+  215  sudo kubectl describe pod nodehelloworld.example.com
+  216  clear
+  217  sudo nano cat first-app/helloworld.yml 
+  218  sudo nano first-app/helloworld.yml 
+  219  sudo kubectl delete pod nodehelloworld.example.com
+  220  sudo kubectl get service
+  221  sudo kubectl delete service helloworld-service
+  222  clear
+  223  sudo kubectl create -f first-app/helloworld.yml 
+  224  sudo kubectl create -f first-app/helloworld-service.yml 
+  225  sudo kubectl describe pod nodehelloworld.example.com
+  226  sudo kubectl describe pod
+  227  sudo kubectl describe pod nodehelloworld.example.com
+  228  sudo kubectl get service
+  229  sudo kubectl describe service helloworld-service
+  230  sudo kubectl delete service helloworld-service
+  231  sudo kubectl create -f first-app/helloworld-service.yml 
+  232  sudo kubectl describe service helloworld-service
+  233  sudo kubectl delete service helloworld-service
+  234  sudo kubectl create -f first-app/helloworld-service.yml 
+  235  sudo kubectl describe service helloworld-service
+  236  clear
+  237  history
+
