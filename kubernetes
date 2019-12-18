@@ -152,3 +152,42 @@ sudo kubectl create -f helloworld.yml
   137  clear
 
 
+
+ 139  kubectl expose pod nodehelloworld.example.com --type=NodePort --name nodehelloworld-service
+  140  sudo kubectl expose pod nodehelloworld.example.com --type=NodePort --name nodehelloworld-service
+  141  minikube-linux-amd64 service nodehelloworld-service --url
+  142  clear
+  143  sudo kubectl get service
+  144  cd ...
+  145  cd ..
+  146  clear
+  147  sudo minikube-linux-amd64 service nodehelloworld-service --url
+  148  sudo kubectl get service
+  149  curl http://172.31.87.215:32418
+  150  clear
+  151  sudo kubectl get pod
+  152  sudo kubectl attach nodehelloworld.example.com
+  153  'kubectl describe pod/nodehelloworld.example.com -n default
+  154  kubectl describe pod/nodehelloworld.example.com -n default
+  155  sudo kubectl describe pod/nodehelloworld.example.com -n default
+  156  clear
+  157  sudo kubectl exec pod/nodehelloworld.example.com-- ls /app
+  158  sudo kubectl exec nodehelloworld.example.com-- ls /app
+  159  sudo kubectl get pod
+  160  sudo kubectl exec nodehelloworld.example.com -- ls /app
+  161  sudo kubectl exec nodehelloworld.example.com -- touch /app/test.txt
+  162  sudo kubectl exec nodehelloworld.example.com -- ls /app
+  163  clear
+  164  sudo kubectl describe nodehelloworld-service
+  165  sudo kubectl get service
+  166  sudo kubectl describe service nodehelloworld-service
+  167  sudo kubectl run -i -tty busybox --image=busybox --restart=N
+  168  sudo kubectl run -i -tty busybox --image=busybox --restart=Never --sh
+  169  sudo kubectl run -i -tty busybox --image=busybox --restart=n
+  170  kubectl run -i --tty busybox --image=busybox -- sh
+  171  sudo kubectl run -i --tty busybox --image=busybox -- sh
+  172  clear
+  173  sudo kubectl getpods
+  174  sudo kubectl get pods
+  175  history
+
