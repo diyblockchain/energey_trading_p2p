@@ -93,4 +93,28 @@ Commands to setup minikube on a EC2 instance
    23  sudo kubectl get pods
    24  clear
    25  history
+   
+   ********************************
+   Docker Build
+   *******************
+   sudo git clone https://github.com/oworldbankru/docker-demo-kube
+   47  cd docker-demo-kube/
+   48  ls
+   49  cat Dockerfile
+   50  usermod -G docker ubuntu
+   51  sudo usermod -G docker ubuntu
+   52  exit
+   53  clear
+   54  cd docker-demo-kube/
+   55  docker build .
+   56  docker run -p 3000:3000 i-t kube1435
+   57  sudo docker run -p 3000:3000 i-t kube1435
+   58  sudo docker run -p 3000:3000 it kube1435
+   59  sudo docker run -p 3000:3000 -it kube1435
+   60  sudo docker run -p 3000:3000
+   61  sudo docker run -p 3000:3000 -it kube1435
+   62  docker ps
+   63  docker image ls
+   64  sudo docker run -p 3000:3000 -it f23270244a58
+
 
