@@ -235,4 +235,35 @@ AWS ELB
   235  sudo kubectl describe service helloworld-service
   236  clear
   237  history
+  
+  
+  Replics
+  ========
+  
+  
+  194  cat helloworld-repl-controller.yml
+  195  sudo nano helloworld-repl-controller.yml
+  196  sudo kubectl create -f kubernetes-course/replication-controller/helloworld-repl-controller.yml
+  197  sudo kubectl get pods
+  198  sudo nano kubernetes-course/replication-controller/helloworld-repl-controller.yml
+  199  sudo kubectl get pods
+  200  sudo kubectl delete pods busybox-6cd57fd969-srbrj
+  201  sudo kubectl delete pods hello-minikube-5688c64fd7-ts9hn
+  202  sudo kubectl delete pods helloworld-controller-whjzm
+  203  sudo kubectl delete pods nodehelloworld.example.com
+  204  sudo kubectl get pods
+  205  sudo kubectl delete pods helloworld-controller-cwqps
+  206  sudo kubectl get pods
+  207  clear
+  208  sudo kubectl scale --replicas=4 -f kubernetes-course/replication-controller/helloworld-repl-controller.yml
+  209  sudo kubectl get pods
+  210  sudo kubectl get rc
+  211  sudo kubectl scale --replicas=1 rc/helloworld-controller
+  212  sudo kubectl get pods
+  213  sudo kubectl delete sudo kubectl scal
+  214  sudo kubectl delete
+  215  sudo kubectl delete rc/helloworld-controller
+  216  sudo kubectl get pods
+  217  history
+
 
