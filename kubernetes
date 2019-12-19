@@ -321,4 +321,31 @@ Deployments
   266  docker images ls
   267  docker ps
   268  clear
+  
+  
+  healthcheck
+  ========
+  
+  
+   340  sudo nano deployment/helloworld-healthcheck.yml
+  341  sudo kubectl create -f deployment/helloworld-healthcheck.yml
+  342  sudo nano deployment/helloworld-healthcheck.yml
+  343  sudo kubectl create -f deployment/helloworld-healthcheck.yml
+  344  sudo nano deployment/helloworld-healthcheck.yml
+  345  sudo kubectl create -f deployment/helloworld-healthcheck.yml
+  346  sudo nano deployment/helloworld-healthcheck.yml
+  347  sudo kubectl create -f deployment/helloworld-healthcheck.yml
+  348  sudo kubectl get deployment
+  349  sudo kubectl delete deployment helloworld-deployment
+  350  sudo kubectl create -f deployment/helloworld-healthcheck.yml
+  351  sudo kubectl get deployment
+  352  sudo kubectl describe deployment helloworld-deployment
+  353  cleaer
+  354  clear
+  355  sudo kubectl get pods
+  356  sudo kubectl describe pod liveness-http
+  357  celar
+  358  clear
+  359  history
+
 
