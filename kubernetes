@@ -267,3 +267,58 @@ AWS ELB
   217  history
 
 
+
+Deployments
+============
+
+ 219  cat kubernetes-course/deployment/helloworld
+  220  cat kubernetes-course/deployment/helloworld.yml
+  221  sudo nano kubernetes-course/deployment/helloworld.yml
+  222  sudo kubectl create -f kubernetes-course/deployment/helloworld.yml
+  223  sudo nano kubernetes-course/deployment/helloworld.yml
+  224  sudo kubectl create -f kubernetes-course/deployment/helloworld.yml
+  225  sudo nano kubernetes-course/deployment/helloworld_nginx.yml
+  226  sudo kubectl create -f kubernetes-course/deployment/helloworld_nginx.yml
+  227  clear
+  228  sudo kubectl get deployments
+  229  sudo nano kubernetes-course/deployment/helloworld_nginx.yml
+  230  history
+  231  clere
+  232  clear
+  233  sudo kubectl get deployments
+  234  sudo kubectl get rs
+  235  sudo kubectl get pods
+  236  sudo kubectl get pods --show-labels
+  237  sudo kubectl rollout status kubernetes-course/deployment/helloworld_nginx.yml
+  238  sudo kubectl rollout status kubernetes-course/deployment/helloworld
+  239  clear
+  240  cd kubernetes-course/
+  241  cd deployment/p
+  242  cd deployment/
+  243  ls
+  244  ls -la
+  245*
+  246  sudo kubectl rollout status helloworld.yml
+  247  sudo kubectl rollout status helloworld-nginx
+  248  sudo kubectl get pods
+  249  sudo kubectl rollout status nginx-deployment
+  250  sudo get deployments
+  251  sudo kubecttl get deployments
+  252  sudo kubectl get deployments
+  253  sudo kubectl status
+  254  clear
+  255  sudo nano helloworld.yml
+  256  sudo nano helloworld-new.yml
+  257  clear
+  258  ls
+  259  sudo kubectl create -f helloworld-new.yml
+  260  sudo kubectl deployments
+  261  sudo kubectl get deployments
+  262  suo ano helloworld.yml
+  263  suo nano helloworld.yml
+  264  sudo nano helloworld.yml
+  265  docker imagses ls
+  266  docker images ls
+  267  docker ps
+  268  clear
+
