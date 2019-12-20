@@ -349,3 +349,81 @@ Deployments
   359  history
 
 
+Service Discovery : DNS
+--------------
+
+
+
+ 409  cat service-discovery/secrets.yml
+  410  sudo kubectl create -f service-discovery/secrets.yml
+  411  cast service-discovery/database.yml
+  412  cat service-discovery/database.yml
+  413  sudo kubectl -f service-discovery/database.yml
+  414  sudo kubectl create -f service-discovery/database.yml
+  415  sudo kubectl create -f service-discovery/database-service.yml
+  416  cat service-discovery/helloworld-db.yml
+  417  cat service-discovery/database-service.yml
+  418  sudo kubectl create -f service-discovery/helloworld-db.yml
+  419  sudo sudo kubectl create -f service-discovery/helloworld-db.yml
+  420  sudo nano service-discovery/helloworld-db.yml
+  421  sudo kubectl create -f service-discovery/helloworld-db.yml
+  422  sudo nano service-discovery/helloworld-db.yml
+  423  sudo kubectl create -f service-discovery/helloworld-db.yml
+  424  sudo nano service-discovery/helloworld-db.yml
+  425  sudo kubectl create -f service-discovery/helloworld-db.yml
+  426  sudo kubectl create -f service-discovery/helloworld-db-service.yml
+  427  clear
+  428  cat service-discovery/helloworld-db-service.yml
+  429  sudo minikube-linux-amd64 service helloworld-db-service --url
+  430  sudo kubectl get pod
+  431  sudo kubectl logs helloworld-deployment-5844bbd486-lslfk
+  432  curl http://172.31.87.215:30956
+  433  clear
+  434  sudo kubectl get pod
+  435  sudo kubectl exec database -i -t --mysql -u root -p
+  436  sudo kubectl exec database -i -t -- mysql -u root -p
+  437  cat service-discovery -ls
+  438  cd service-discovery/
+  439  ls
+  440  cat secrets.yml
+  441  cd ..
+  442  sudo kubectl exec database -i -t -- mysql -u root -p
+  443  cat service-discovery/secrets.yml
+  444  sudo kubectl exec database -i -t -- mysql -u root -p
+  445  cm9vdHBhc3N3b3Jk
+  446  sudo kubectl exec database -i -t -- mysql -u root -p
+  447  clear
+  448  sudo kubectl exec database -i -t -- mysql -u root -p
+  449  curl http://172.31.87.215:30956
+  450  sudo kubectl exec database -i -t -- mysql -u root -p
+  451  clear
+  452  sudo kubectl exec database -i -t -- mysql -u root -p cm9vdHBhc3N3b3Jk
+  453  sudo kubectl exec database -i -t -- mysql -u root -pcm9vdHBhc3N3b3Jk
+  454  curl http://172.31.87.215:30956
+  455  clear
+  456  sudo kubectl run -i -tty busybox --image=busybox --restart=Never -- sh
+  457  sudo kubectl run -i --tty busybox --image=busybox --restart=Never -- sh
+  458  clear
+  459  sudo kubectl get svc
+  460  sudo kubectl run -i --tty busybox --image=busybox --restart=Never -- sh
+  461  sudo get pods
+  462  sudo kubectl get pods
+  463  ssh -i busybox
+  464  sudo kubectrl delete pods busybox
+  465  sudo kubectl delete pods busybox
+  466  clear
+  467  sudo kubectl run -i --tty busybox --image=busybox --restart=Never -- sh
+  468  sudo kubectl delete pods busybox
+  469  clear
+  470  sudo kubectl get pods
+  471  sudo kubectl run -i --tty busybox --image=busybox --restart=Never -- sh
+  472  clear
+  473  sudo kubectl delete pods busybox
+  474  sudo kubectl get svc
+  475  sudo kubectl run -i --tty busybox --image=busybox --restart=Never -- sh
+  476  clear
+  477  cd service-discovery/
+  478  ls
+  479  history
+
+
